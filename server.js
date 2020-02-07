@@ -1,7 +1,6 @@
 var express = require('express');
 var passport = require('passport');
 var Strategy = require('passport-http').DigestStrategy;
-var bodyParser = require('body-parser');
 var db = require('./db');
 
 
@@ -29,8 +28,7 @@ var app = express();
 // Use application-level middleware for common functionality, including
 // logging, parsing, and session handling.
 app.use(require('morgan')('combined'));
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(require('express-session')({ secret: 'keyboard cat', resave: false, saveUninitialized: false }));
+app.use(require('body-parser').urlencoded({ extended: true }));
 
 // Initialize Passport and restore authentication state, if any, from the
 // session.
