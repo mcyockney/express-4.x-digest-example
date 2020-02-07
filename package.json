@@ -1,0 +1,30 @@
+{
+  "name": "express-4.x-digest-example",
+  "version": "0.0.0",
+  "description": "Express 4.x app using Passport for authentication with http authentication.  Built on Jared Hansons example but updated for Express 4",
+  "keywords": [
+    "example",
+    "express",
+    "passport"
+  ],
+  "author": "Matthew Yockney",
+  "license": "Unlicense",
+  "homepage": "https://github.com/mcyockney/express-4.x-digest-example",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mcyockney/express-4.x-digest-example"
+  },
+  "bugs": {
+    "url": "https://github.com/mcyockney/express-4.x-digest-example/issues"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "connect-ensure-login": "^0.1.1",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "express-session": "^1.16.1",
+    "morgan": "^1.9.1",
+    "passport": "^0.4.1",
+    "passport-http": "^0.3.0"
+  }
+}
